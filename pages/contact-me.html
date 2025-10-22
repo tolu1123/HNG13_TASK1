@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me</title>
+    <script defer src="../scripts/header.js"></script>
+    <script defer src="../scripts/contact-us.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload  Fonts and styles-->
+    <link rel="preload" href="../styles/header.css" as="style">
+    <link rel="preload" href="../styles/contact-me.css" as="style" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="preload"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+      as="font"
+    />
+    <!-- Need -->
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/contact-me.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+    />
+  </head>
+  <body class="space-grotesk-regular">
+    <header>
+      <nav id="primary-navigation" class="glassy display-none">
+        <ul class="">
+          <li class="">
+            <span class="">Navigation</span>
+            <span id="close-nav" class=""><i class="fa-solid fa-xmark"></i></span>
+          </li>
+          <li class="">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="">
+            <a href="./about-me.html">About me</a>
+          </li>
+          <li class="">
+            <a href="./contact-me.html">Contact me</a></li>
+        </ul>
+      </nav>
+      <button
+      id="menu-button"
+      class="menu-button glassy"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+      aria-label="Open main menu"
+    >
+      Menu 
+      <span><i class="fa-solid fa-chevron-down"></i></span>
+    </button>
+    </header>
+    <main>
+      <!-- My Profile picture -->
+      <section class="img-container">
+        <figure class="profile-avatar">
+          <img
+            data-testid="test-user-avatar"
+            src="../images/author.jpg"
+            alt="Tolu pics"
+          />
+        </figure>
+      </section>
+
+      <!-- Form Section  -->
+      <section class="contact-form">
+        <h2 class="space-grotesk-bold heading-1">Contact me ❤️❤️</h2>
+
+        <form action="" method="post" novalidate>
+          <!-- Full name -->
+          <div class="">
+            <label for="fullname">Full name*:</label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder=""
+              data-testid="test-contact-name"
+              aria-describedby="fullname-error"
+              required
+            />
+            <p id="fullname-error" class="form-warning" data-testid="test-contact-error-fullname"></p>
+          </div>
+
+          <!-- Email -->
+          <div class="">
+            <label for="email">Email*:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder=""
+              data-testid="test-contact-email"
+              aria-describedby="email-error"
+              required
+            />
+            <p id="email-error" class="form-warning" data-testid="test-contact-error-email"></p>
+          </div>
+
+          <!-- Subject -->
+          <div class="">
+            <label for="subject">Subject*:</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder=""
+              data-testid="test-contact-subject"
+              aria-describedby="subject-error"
+              required
+            />
+            <p id="subject-error" class="form-warning" data-testid="test-contact-error-subject"></p>
+          </div>
+
+          <!-- Message -->
+          <div class="">
+            <label for="message">Message*:</label>
+            <textarea
+              name="message"
+              id="message"
+              data-testid="test-contact-message"
+              aria-describedby="message-error"
+              required
+            ></textarea>
+            <p id="message-error" class="form-warning" data-testid="test-contact-error-message"></p>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" data-testid="test-contact-submit" class="space-grotesk-bold">
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <!-- Toast Container -->
+      <section class="toast-viewport">
+        <!-- <div class="toast" data-testid="test-contact-success">
+          <p class="toast-message">Message was successfully submitted.</p>
+          <span class="toast-close"><i class="fa-solid fa-xmark"></i></span>
+        </div> -->
+      </section>
+      <!-- Social links -->
+      <section data-testid="test-user-social-links" class="social-links">
+        <a
+          href="https://www.linkedin.com/in/tolulope-ojo-893992276/"
+          data-testid="test-user-social-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a
+        >
+        <a
+          href="https://github.com/tolu1123"
+          data-testid="test-user-social-github"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i><span>Github</span></a
+        >
+        <a
+          href="https://twitter.com/TolulopeOj25138"
+          data-testid="test-user-social-twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-square-x-twitter"></i> <span>Twitter</span></a
+        >
+      </section>
+    </main>
+  </body>
+</html>

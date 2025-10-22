@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <script defer src="../scripts/header.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload  Fonts and styles-->
+    <link rel="preload" href="../styles/header.css" as="style">
+    <link rel="preload" href="style.css" as="style" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="preload"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+      as="font"
+    />
+    <!-- Need -->
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+    />
+  </head>
+  <body class="space-grotesk-regular">
+    <header>
+      <nav id="primary-navigation" class="glassy display-none">
+        <ul class="">
+          <li class="">
+            <span class="">Navigation</span>
+            <span id="close-nav" class=""
+              ><i class="fa-solid fa-xmark"></i
+            ></span>
+          </li>
+          <li class="">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="">
+            <a href="./pages/about-me.html">About me</a>
+          </li>
+          <li class="">
+            <a href="./pages/contact-me.html">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        id="menu-button"
+        class="menu-button glassy"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        aria-label="Open main menu"
+      >
+        Menu
+        <span><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+    </header>
+    <article data-testid="test-profile-card">
+      <div class="img-container">
+        <figure class="profile-avatar">
+          <img
+            data-testid="test-user-avatar"
+            src="./images/author.jpg"
+            alt="Tolu pics"
+          />
+        </figure>
+      </div>
+      <div class="profile-details">
+        <h2 class="space-grotesk-bold heading-1">
+          👏 I'm <span data-testid="test-user-name" class="">Ojo Tolulope</span>
+        </h2>
+        <p data-testid="test-user-bio" class="bio">
+          I am that Tolu that you can't describe in a page. See me as an
+          octahedron, but more faces. Many who know me see me as a go to
+          frontend guy, with some i am chill, with some proud, some call me
+          pastor, some quiet, some loud. But trust me these words don't fully
+          describe me or what they see me as. Still me I just wanna be in a
+          corner somewhere, writing impactful code.
+          <br />
+          I don't wanna be someone's clone, i just wanna be the real me!
+        </p>
+      </div>
+      <div class="profile-peeking">
+        <h3 class="space-grotesk-bold heading-2">Are you spying on me?</h3>
+        <p class="">
+          Just so you know, I am at Ibadan currently. And the current time here
+          is <span data-testid="test-user-time" class="current-time"></span>.
+          😜🤪Ooops!! sorry they failed to tell you, I am a 🤓 geek.
+        </p>
+        <section>
+          <h4 class="space-grotesk-bold heading-3">My Hobbies</h4>
+          <ul data-testid="test-user-hobbies">
+            <li>Having meaningful conversations with people.</li>
+            <li>Wanna hear a white lie? - I love writing code.</li>
+          </ul>
+        </section>
+        <section>
+          <h4 class="space-grotesk-bold heading-3">My Dislikes</h4>
+          <ul data-testid="test-user-dislikes">
+            <li>I dislike every moment i can't be me.</li>
+            <li>
+              I dislike me not able to convey my feelings and expressions as i
+              would have loved to
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div data-testid="test-user-social-links" class="social-links">
+        <a
+          href="https://www.linkedin.com/in/tolulope-ojo-893992276/"
+          data-testid="test-user-social-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a
+        >
+        <a
+          href="https://github.com/tolu1123"
+          data-testid="test-user-social-github"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i><span>Github</span></a
+        >
+        <a
+          href="https://twitter.com/TolulopeOj25138"
+          data-testid="test-user-social-twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-square-x-twitter"></i> <span>Twitter</span></a
+        >
+      </div>
+    </article>
+  </body>
+</html>

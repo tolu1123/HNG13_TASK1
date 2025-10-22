@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Tolu Ojo</title>
+    <script defer src="../scripts/header.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload  Fonts and styles-->
+    <link rel="preload" href="../styles/header.css" as="style">
+    <link rel="preload" href="../styles/about-me.css" as="style" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="preload"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+      as="font"
+    />
+    <!-- Need -->
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/about-me.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+    />
+  </head>
+  <body class="space-grotesk-regular">
+    <header>
+      <nav id="primary-navigation" class="glassy display-none">
+        <ul class="">
+          <li class="">
+            <span class="">Navigation</span>
+            <span id="close-nav" class=""
+              ><i class="fa-solid fa-xmark"></i
+            ></span>
+          </li>
+          <li class="">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="">
+            <a href="./about-me.html">About me</a>
+          </li>
+          <li class="">
+            <a href="./contact-me.html">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        id="menu-button"
+        class="menu-button glassy"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        aria-label="Open main menu"
+      >
+        Menu
+        <span><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+    </header>
+    <main data-testid="test-about-page">
+      <!-- My Profile picture -->
+      <section class="img-container">
+        <figure class="profile-avatar">
+          <img
+            data-testid="test-user-avatar"
+            src="../images/author.jpg"
+            alt="Tolu pics"
+          />
+        </figure>
+      </section>
+
+      <!-- Bio -->
+      <section data-testid="test-about-bio" class="bio">
+        <h2 class="space-grotesk-bold heading-1">My Bio 🫣</h2>
+        <p class="">
+          Amidst the chaos of knowing me, the one thing that stands out about me
+          is that I am a frontend developer. That is my work and that is what i
+          know by heart. My work speaks for itself.
+        </p>
+      </section>
+
+      <!-- Program Goals -->
+      <section data-testid="test-about-goals" class="program-goals">
+        <h3 class="space-grotesk-bold heading-2">My Goals🎯 for HNG13</h3>
+        <ul class="">
+          <li class="">
+            I want to complete HNG13 (Frontend track) in prep for next year 2026
+          </li>
+          <li class="">Build myself as that go to cracked frontend dev</li>
+        </ul>
+      </section>
+
+      <!-- Areas of low confidence -->
+      <section data-testid="test-about-confidence" class="confidence-needs">
+        <h3 class="space-grotesk-bold heading-2">
+          Areas where i have 😫low confidence
+        </h3>
+        <ul class="">
+          <li class="">
+            Writing tests for my applications has been my nemesis
+          </li>
+          <li class="">
+            Ability to complete this program due to the bad environment (Nepa 💡
+            issues)
+          </li>
+        </ul>
+      </section>
+
+      <!-- Note to my future self -->
+      <section data-testid="test-about-future-note" class="notes">
+        <h3 class="space-grotesk-bold heading-2">Notes to future me😎</h3>
+        <ul class="">
+          <li class="">I wannna be proud i did and completed this program</li>
+          <li class="">
+            Right now i wanna quell all flames of feelings in me.
+          </li>
+          <li class="">Go mann, the world is yours for the taking🌍</li>
+        </ul>
+      </section>
+
+      <!-- My extra thoughts -->
+      <section data-testid="test-about-extra" class="thoughts">
+        <h3 class="space-grotesk-bold heading-2">Read my thoughts🗒</h3>
+        <ul class="">
+          <li class="">
+            I need help in ways you cannot fully fathom, so please do not make
+            life hard for me.
+          </li>
+          <li class="">
+            I need a job with a very expressive and collaborative environment.
+            You can help me? -- Please do reach out, it will be much appreciated
+          </li>
+        </ul>
+      </section>
+
+      <!-- Social links -->
+      <section data-testid="test-user-social-links" class="social-links">
+        <a
+          href="https://www.linkedin.com/in/tolulope-ojo-893992276/"
+          data-testid="test-user-social-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a
+        >
+        <a
+          href="https://github.com/tolu1123"
+          data-testid="test-user-social-github"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i><span>Github</span></a
+        >
+        <a
+          href="https://twitter.com/TolulopeOj25138"
+          data-testid="test-user-social-twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-square-x-twitter"></i> <span>Twitter</span></a
+        >
+      </section>
+    </main>
+  </body>
+</html>
