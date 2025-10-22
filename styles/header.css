@@ -111,6 +111,10 @@ a {
     padding: 0.5rem 0.75rem;
   }
 
+  header ul a {
+    color: #fff;
+  }
+
   header ul li:first-child {
     display: none;
   }
